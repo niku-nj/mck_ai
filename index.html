@@ -17,7 +17,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#hideshow').on('click', function(event) {        
+          $('.content').toggle('show');
+        });
+      });
+    </script>
   </head>
+  
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_navbar.html -->
@@ -596,10 +605,17 @@
                 </div>
               </div>
             </div> -->
+            <div style="float: right">
+                <iframe class="content" style="border:0;display:none" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/fd731530-4970-418d-8966-c31b551498a8"></iframe>  
+              <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="hideshow">Chat</button>                              
+            </div>
           </div>
+          
+              
+          
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <footer class="footer">
+          <footer class="footer">              
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2017 <a href="https://www.bootstrapdash.com/" target="_blank">BootstrapDash</a>. All rights reserved.</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>

@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Mck AI</title>
+    <title>Mck Boarding Pass</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
@@ -17,6 +17,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#hideshow').on('click', function(event) {        
+          $('.content').toggle('show');
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="container-scroller">
@@ -611,6 +619,10 @@
                 </div>
               </div>
             </div> -->
+            <div style="float: right">
+                <iframe class="content" style="border:0;display:none" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/fd731530-4970-418d-8966-c31b551498a8"></iframe>  
+              <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="hideshow">Chat</button>                              
+            </div>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
